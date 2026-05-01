@@ -21,7 +21,8 @@
       background-image:
         linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.15) 100%),
         url("img/portada.png");
-      background-size: contain;
+     background-size: cover;
+background-position: 70% center;
 background-repeat: no-repeat;
 background-position: right center;
       display: flex;
@@ -149,7 +150,64 @@ background-position: right center;
       text-decoration: none;
       font-size: 20px;
     }
+    .video-card {
+  border: 1px solid #333;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  padding: 50px;
+  max-width: 800px;
+}
 
+.video-info h4 {
+  font-size: 28px;
+  margin-top: 0;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  border: 1px solid #c89b3c;
+  color: #c89b3c;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.button:hover {
+  background: #c89b3c;
+  color: black;
+}
+.video-card {
+  border: 1px solid #333;
+  background: #0d0d0d;
+  padding: 45px;
+  max-width: 850px;
+}
+
+.video-card h4 {
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  border: 1px solid #c89b3c;
+  color: #c89b3c;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.button:hover {
+  background: #c89b3c;
+  color: black;
+}
     @media (max-width: 800px) {
       header {
         padding: 120px 30px 60px;
@@ -321,19 +379,22 @@ background-position: right center;
   </div>
 </section>
 <section id="media">
+ <section id="media">
+ <section id="media">
   <h3>Entrevista</h3>
 
-  <p>
-    Entrevista en Canal Sur donde Juan Dolores Caballero reflexiona
-    sobre su trayectoria, su proceso creativo y su visión de la escena contemporánea.
-  </p>
+  <div class="video-card">
+    <h4>Encuentros Canal Sur</h4>
 
-  <p>
-    <a href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
+    <p>
+      Entrevista en Canal Sur donde Juan Dolores Caballero reflexiona sobre
+      su trayectoria, su proceso creativo y su visión de la escena contemporánea.
+    </p>
+
+    <a class="button" href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
       Ver entrevista en Canal Sur
     </a>
-  </p>
-
+  </div>
 </section>
 
   <section id="imagenes">
