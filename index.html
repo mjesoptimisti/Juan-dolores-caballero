@@ -1,434 +1,369 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Juan Dolores Caballero</title>
+<meta charset="UTF-8">
+<title>Juan Dolores Caballero</title>
+<link rel="icon" href="img/favicon.png">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
 
-    body {
-      margin: 0;
-      background: #050505;
-      color: white;
-      font-family: Georgia, serif;
-    }
+* { box-sizing: border-box; }
 
-    header {
-      min-height: 100vh;
-      background-image:
-        linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.15) 100%),
-        url("img/portada.png");
-     background-size: cover;
-background-position: 70% center;
-background-repeat: no-repeat;
-background-position: right center;
-      display: flex;
-      align-items: center;
-      padding: 80px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 25px 70px;
-      background: rgba(0,0,0,0.65);
-      z-index: 10;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 18px;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    nav a:hover {
-      color: #c89b3c;
-    }
-
-    .hero-text {
-      max-width: 620px;
-    }
-
-    h1 {
-      font-size: 74px;
-      line-height: 0.95;
-      letter-spacing: 5px;
-      margin: 0 0 25px;
-    }
-
-    h2 {
-      color: #c89b3c;
-      font-size: 30px;
-      font-weight: normal;
-      margin-bottom: 28px;
-    }
-
-    .disciplinas {
-      letter-spacing: 5px;
-      font-size: 15px;
-      text-transform: uppercase;
-      margin-bottom: 45px;
-    }
-
-    .cita {
-      font-size: 24px;
-      font-style: italic;
-      line-height: 1.4;
-      color: #ddd;
-      max-width: 520px;
-    }
-
-    section {
-      padding: 90px 80px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h3 {
-      color: #c89b3c;
-      letter-spacing: 8px;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: normal;
-      margin-bottom: 35px;
-    }
-
-    p {
-      font-size: 19px;
-      line-height: 1.8;
-      color: #ddd;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
-    }
-
-    .card {
-      border: 1px solid #333;
-      padding: 28px;
-      background: #0d0d0d;
-    }
-
-    .card h4 {
-      color: white;
-      font-size: 22px;
-      margin-top: 0;
-    }
-
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
-
-    .galeria img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      filter: grayscale(20%);
-    }
-
-    footer {
-      padding: 70px;
-      text-align: center;
-      border-top: 1px solid #222;
-    }
-
-    footer a {
-      color: #c89b3c;
-      text-decoration: none;
-      font-size: 20px;
-    }
-    .video-card {
-  border: 1px solid #333;
-  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-  padding: 50px;
-  max-width: 800px;
-}
-
-.video-info h4 {
-  font-size: 28px;
-  margin-top: 0;
+body {
+  margin: 0;
+  background: #050505;
   color: white;
+  font-family: Georgia, serif;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
-  border: 1px solid #c89b3c;
-  color: #c89b3c;
+/* HEADER */
+
+header {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.15) 100%),
+    url("img/portada.png");
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+/* MENU */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+  background: rgba(0,0,0,0.65);
+  text-align: center;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+  margin: 0 15px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 13px;
 }
 
-.button:hover {
-  background: #c89b3c;
-  color: black;
+nav a:hover {
+  color: #c89b3c;
 }
+
+/* HERO */
+
+.hero-text {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 0.95;
+  letter-spacing: 5px;
+}
+
+h2 {
+  color: #c89b3c;
+  font-weight: normal;
+}
+
+.disciplinas {
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.cita {
+  font-style: italic;
+  color: #ddd;
+}
+
+/* SECCIONES */
+
+section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h3 {
+  color: #c89b3c;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #ddd;
+}
+
+/* GRID OBRAS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 20px;
+  background: #0d0d0d;
+}
+
+.card ul {
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+/* GALERIA */
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* VIDEO */
+
 .video-card {
   border: 1px solid #333;
+  padding: 30px;
   background: #0d0d0d;
-  padding: 45px;
-  max-width: 850px;
-}
-
-.video-card h4 {
-  color: white;
-  font-size: 30px;
-  margin-top: 0;
 }
 
 .button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
+  margin-top: 15px;
+  padding: 10px 20px;
   border: 1px solid #c89b3c;
   color: #c89b3c;
   text-decoration: none;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 13px;
 }
 
-.button:hover {
-  background: #c89b3c;
-  color: black;
+/* CONTACTO */
+
+footer {
+  text-align: center;
+  padding: 50px;
 }
-    @media (max-width: 800px) {
-      header {
-        padding: 120px 30px 60px;
-        background-position: center;
-      }
 
-      h1 {
-        font-size: 45px;
-      }
+.contact-card {
+  border: 1px solid #c89b3c;
+  padding: 20px;
+  display: inline-block;
+}
 
-      nav {
-        padding: 18px;
-      }
+/* MOVIL */
 
-      nav a {
-        display: inline-block;
-        margin: 7px;
-        font-size: 11px;
-      }
+@media (max-width: 800px) {
+  header {
+    background-size: auto 70%;
+    background-position: center bottom;
+    padding: 60px 20px;
+  }
 
-      section {
-        padding: 60px 30px;
-      }
-    }
-  </style>
+  h1 { font-size: 40px; }
+
+  nav a {
+    font-size: 10px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#poetica">Poética</a>
-    <a href="#bio">Biografía</a>
-    <a href="#obras">Obras</a>
-    <a href="#media">Media</a>
-    <a href="#imagenes">Imágenes</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#trayectoria">Trayectoria</a>
+<a href="#obras">Obras</a>
+<a href="#media">Medios</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-  <header id="inicio">
-    <div class="hero-text">
-      <h1>JUAN<br>DOLORES<br>CABALLERO</h1>
-      <h2>Actor · Director</h2>
+<header id="inicio">
+<div class="hero-text">
+<h1>JUAN<br>DOLORES<br>CABALLERO</h1>
+<h2>Actor · Director · Creador escénico</h2>
+<div class="disciplinas">Teatro · Danza · Flamenco · Ópera</div>
+<p class="cita">Exploro lo contemporáneo desde lo grotesco y la contradicción</p>
+</div>
+</header>
 
-      <div class="disciplinas">
-        Teatro · Danza · Flamenco · Ópera
-      </div>
-
-      <div class="cita">
-        “Exploro lo contemporáneo desde la deformación, lo grotesco y la contradicción.”
-      </div>
-    </div>
-  </header>
-
-  <section id="poetica">
-  <h3>Poética</h3>
-
-  <p>
-    Mi trabajo se sitúa en los márgenes de lo normativo, explorando lo contemporáneo
-    desde la deformación, lo grotesco y la contradicción. Me interesa aquello que
-    escapa de la armonía clásica: lo inacabado, el exceso, la tensión entre lo bello
-    y lo inquietante.
-  </p>
-
-  <p>
-    La escena es un espacio de fricción donde lo social y lo íntimo se entrelazan.
-    En ella conviven cuerpos, imágenes y lenguajes que se descomponen y recomponen
-    constantemente, revelando capas ocultas de la realidad.
-  </p>
-
-  <p>
-    Trabajo con un realismo grotesco que no busca representar el mundo tal como es,
-    sino transformarlo, tensarlo y hacerlo visible desde otros ángulos. Me interesa
-    lo que permanece oculto: lo marginal, lo desechado, lo que no encaja.
-  </p>
-
-  <p>
-    Cada creación es un territorio híbrido donde teatro, danza, flamenco y ópera
-    dialogan para construir un lenguaje propio. Un espacio donde lo poético emerge
-    como resistencia frente a lo evidente, y donde la escena se convierte en un
-    acto de revelación.
-  </p>
-
-</section>
-
-  <section id="bio">
-  <h3>Biografía</h3>
+<section id="trayectoria">
+<h3>Trayectoria</h3>
 
   <p>
     Juan Dolores Caballero es director y creador escénico formado en el Instituto
     del Teatro de Sevilla y graduado en Bellas Artes por la Universidad de Sevilla.
+    Su trabajo se sitúa en los márgenes de lo normativo, explorando la escena
+    contemporánea desde la deformación, lo grotesco y la contradicción.
   </p>
 
   <p>
-    Su trayectoria abarca distintos territorios de la escena: teatro clásico,
-    dramaturgia contemporánea, danza, flamenco y ópera. En sus trabajos desarrolla
-    una escritura escénica propia donde conviven la dirección, la imagen, el cuerpo,
-    el espacio y la composición plástica.
+    A lo largo de su trayectoria ha desarrollado un lenguaje propio en el que
+    convergen teatro, danza, flamenco y ópera, integrando la dirección, la
+    escenografía y el vestuario en una única escritura escénica.
   </p>
 
   <p>
-    Ha dirigido más de cincuenta espectáculos, presentados en espacios y festivales
-    como el Festival Internacional de Teatro Clásico de Almagro, el Festival de
-    Mérida, el Teatro Central y el Teatro Lope de Vega de Sevilla, el Círculo de
-    Bellas Artes de Madrid, el Festival Internacional de Danza de Itálica y diversos
-    circuitos nacionales e internacionales.
+    Ha dirigido más de cincuenta espectáculos presentados en festivales y espacios
+    de referencia como el Festival Internacional de Teatro Clásico de Almagro,
+    el Festival de Mérida, el Teatro Central y el Teatro Lope de Vega de Sevilla,
+    el Círculo de Bellas Artes de Madrid o el Festival Internacional de Danza
+    de Itálica, además de circuitos internacionales en Europa.
   </p>
 
   <p>
-    Su trabajo ha sido reconocido en numerosas ocasiones, siendo finalista de los
-    Premios Max y recibiendo premios y menciones en distintos ámbitos de la escena,
+    Su trabajo ha sido reconocido en diversas ocasiones, siendo finalista en dos
+    ediciones de los Premios Max y recibiendo premios en el ámbito del teatro,
     la danza y el flamenco.
   </p>
 
   <p>
-    Además de su labor como director, ha desarrollado una intensa actividad docente:
-    fue director y profesor de la Escuela de Dirección y Escenografía del Centro
-    Andaluz de Teatro y profesor externo del Máster de Artes del Espectáculo Vivo
-    de la Universidad de Sevilla.
+    Paralelamente, ha desarrollado una labor pedagógica como director y profesor
+    de la Escuela de Dirección y Escenografía del Centro Andaluz de Teatro y como
+    profesor externo del Máster de Artes del Espectáculo Vivo de la Universidad
+    de Sevilla.
   </p>
 </section>
- <section id="obras">
-  <h3>Obras</h3>
+
+<section id="obras">
+ <h3>Obras</h3>
 
   <div class="grid">
 
     <div class="card">
       <h4>Teatro clásico</h4>
       <p>
-        Las Gracias Mohosas · El Invisible Príncipe del Baúl · Rey Perico y la Dama Tuerta · La cárcel de Sevilla
+    · Las Gracias Mohosas  
+        <p></p>· El Invisible Príncipe del Baúl 
+        <p></p>
+        · Rey Perico y la Dama Tuerta 
+        <p></p>· La cárcel de Sevilla
       </p>
     </div>
 
     <div class="card">
       <h4>Textos contemporáneos</h4>
       <p>
-        Las Presidentas (Werner Schwab) · La Noche (Maeterlinck) · El Rayo Colgado (Francisco Nieva) · El Deseo atrapado por la cola (Picasso)
+        ·Las Presidentas (Werner Schwab) 
+        <p></p>
+        · La Noche (Maeterlinck) 
+        <p></p>· El Rayo Colgado (Francisco Nieva) 
+        <p></p>· El Deseo atrapado por la cola (Picasso)
       </p>
     </div>
 
     <div class="card">
       <h4>Creación propia</h4>
       <p>
-        Augusto · Dröppo
+        · Augusto 
+        <p></p>· Dröppo
       </p>
     </div>
 
     <div class="card">
       <h4>Danza</h4>
       <p>
-        Rey para una tarde lluviosa (Ricardo III) · Hildegard · Upper · La Cocina de los Ángeles · Les Vieux · Hamvito
+    · Rey para una tarde lluviosa (Ricardo III) 
+    <p></p>
+    · Hildegard 
+    <p></p>
+    · Upper 
+    <p></p>
+    · La Cocina de los Ángeles 
+    <p></p>
+    · Les Vieux 
+    <p></p>
+    · Hamvito
       </p>
     </div>
 
     <div class="card">
       <h4>Ópera</h4>
       <p>
-        La Medium (Menotti) · El Pequeño Deshollinador (Britten) · Metamorfosis (Diana Pérez Custodio)
+    · La Medium (Menotti) 
+    <p></p>
+    · El Pequeño Deshollinador (Britten) 
+    <p></p>
+    · Metamorfosis (Diana Pérez Custodio)
       </p>
     </div>
 
     <div class="card">
       <h4>Flamenco</h4>
       <p>
-        Catedral (Premio Nacional de Danza 2022) · Distopía · Lenguaje oculto · La tentación de Poe · Origen
+    · Catedral (Premio Nacional de Danza 2022) 
+    <p></p>
+    · Distopía 
+    <p></p>
+    · Lenguaje oculto 
+    <p></p>
+    · La tentación de Poe 
+    <p></p>
+    · Origen
       </p>
-    </div>
 
-  </div>
+</div>
 </section>
+
+<section id="imagenes">
+<h3>Imágenes</h3>
+
+<div class="galeria">
+<img src="img/Hildegard.png">
+<img src="img/LaCocina.png">
+<img src="img/LasAves.png">
+<img src="img/LasGracias.png">
+<img src="img/LesVieux.png">
+</div>
+</section>
+
 <section id="media">
- <section id="media">
- <section id="media">
-  <h3>Entrevista</h3>
+<h3>Entrevista</h3>
 
-  <div class="video-card">
-    <h4>Encuentros Canal Sur</h4>
+<div class="video-card">
 
-    <p>
+ <p>
       Entrevista en Canal Sur donde Juan Dolores Caballero reflexiona sobre
       su trayectoria, su proceso creativo y su visión de la escena contemporánea.
     </p>
 
-    <a class="button" href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
-      Ver entrevista en Canal Sur
-    </a>
-  </div>
+<a class="button" href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
+Ver entrevista
+</a>
+</div>
+
 </section>
 
-  <section id="imagenes">
-    <h3>Imágenes</h3>
-
-    <div class="galeria">
-      <img src="img/Hildegard.png" alt="Hildegard">
-      <img src="img/LaCocina.png" alt="La Cocina">
-      <img src="img/LasAves.png" alt="Las Aves">
-      <img src="img/LasGracias.png" alt="Las Gracias Mohosas">
-      <img src="img/LesVieux.png" alt="Les Vieux">
-    </div>
-  </section>
-
-  <footer id="contacto">
-  <h3>Contacto</h3>
-
-  <p class="contact-intro">
-    Para propuestas profesionales, programación, colaboraciones artísticas
+<footer id="contacto">
+<h3>Contacto</h3>
+<p></p>Para propuestas profesionales, programación, colaboraciones artísticas
     o información sobre sus trabajos escénicos:
-  </p>
+    <p></p>
 
-  <div class="contact-card">
-    <p>Juan Dolores Caballero</p>
+<div class="contact-card">
+<p>Juan Dolores Caballero</p>
+<a class="button" href="mailto:juandolores2002@yahoo.es?subject=Contacto%20Web&body=Hola%20Juan%20Dolores," >
+  Enviar email
+</a>
 
-    <a href="mailto:juandolores2002@yahoo.es">
-      juandolores2002@yahoo.es
-    </a>
-  </div>
+</div>
 
-  <p class="contact-note">
-    Actor · Director · Creador escénico<br>
-    Teatro · Danza · Flamenco · Ópera
-  </p>
+
 </footer>
 
 </body>
