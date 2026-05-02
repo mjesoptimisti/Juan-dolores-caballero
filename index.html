@@ -124,16 +124,32 @@ p {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
 .galeria img {
   width: 100%;
-  height: 250px;
+  height: 260px;
   object-fit: cover;
 }
 
+.galeria img.grande {
+  grid-column: span 2;
+  height: 360px;
+}
+
+@media (max-width: 800px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria img,
+  .galeria img.grande {
+    grid-column: span 1;
+    height: 260px;
+  }
+}
 /* VIDEO */
 
 .video-card {
@@ -215,7 +231,7 @@ h2 {
 <header id="inicio">
 <div class="hero-text">
 <h1>JUAN<br>DOLORES<br>CABALLERO</h1>
-<h2>Actor · Director · Creador escénico</h2>
+<h2>Director · Creador escénico</h2>
 <div class="disciplinas">Teatro · Danza · Flamenco · Ópera</div>
 <p class="cita">Exploro lo contemporáneo desde lo grotesco y la contradicción</p>
 </div>
@@ -224,12 +240,13 @@ h2 {
 <section id="trayectoria">
 <h3>Trayectoria</h3>
 
-  <p>
-    Juan Dolores Caballero es director y creador escénico formado en el Instituto
-    del Teatro de Sevilla y graduado en Bellas Artes por la Universidad de Sevilla.
-    Su trabajo se sitúa en los márgenes de lo normativo, explorando la escena
-    contemporánea desde la deformación, lo grotesco y la contradicción.
-  </p>
+ <p>
+  Juan Dolores Caballero es director escénico, con formación como actor en el Instituto
+  del Teatro de Sevilla y graduado en Bellas Artes por la Universidad de Sevilla.
+  Desarrolla su trabajo en el marco de la compañía Teatro del Velador, desde donde
+  articula una línea de creación propia. Su trabajo se sitúa en los márgenes de lo normativo,
+  explorando la escena contemporánea desde la deformación, lo grotesco y la contradicción.
+</p>
 
   <p>
     A lo largo de su trayectoria ha desarrollado un lenguaje propio en el que
@@ -343,30 +360,48 @@ h2 {
 <h3>Imágenes</h3>
 
 <div class="galeria">
-<img src="img/Hildegard.png">
-<img src="img/LaCocina.png">
-<img src="img/LasAves.png">
-<img src="img/LasGracias.png">
-<img src="img/LesVieux.png">
+  <img class="grande" src="img/Lasgracias.png">
+  <img src="img/Hildegard.png">
+  <img src="img/LaCocina.png">
+  <img src="img/ElRecreo.png">
+  <img src="img/ElRayocolgado.png">
+  <img class="grande" src="img/Reyparaunatarde.png">
+  <img src="img/ElDeseoatrapado.png">
+  <img src="img/ElReyPericoyladama.png">
+  <img src="img/CefaloyPocris.png">
+  <img src="img/Lexvieux.png">
 </div>
-</section>
-
 <section id="media">
-<h3>Entrevista</h3>
+<h3>Medios</h3>
 
 <div class="video-card">
 
- <p>
-      Entrevista en Canal Sur donde Juan Dolores Caballero reflexiona sobre
-      su trayectoria, su proceso creativo y su visión de la escena contemporánea.
-    </p>
+  <p>
+    Entrevista en Canal Sur donde Juan Dolores Caballero reflexiona sobre
+    su trayectoria, su proceso creativo y su visión de la escena contemporánea.
+  </p>
 
-<a class="button" href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
-Ver entrevista
-</a>
+  <a class="button" href="https://www.canalsurmas.es/videos/258284-encuentros-canal-sur-15062025" target="_blank">
+    Ver entrevista
+  </a>
+
+</div>
+
+<div class="video-card">
+
+  <p>
+    Canal de YouTube del Teatro del Velador, con fragmentos de espectáculos
+    y materiales audiovisuales de su compañía.
+  </p>
+
+  <a class="button" href="https://www.youtube.com/@juandolorescaballero" target="_blank">
+    Ver canal de YouTube
+  </a>
+
 </div>
 
 </section>
+
 
 <footer id="contacto">
 <h3>Contacto</h3>
